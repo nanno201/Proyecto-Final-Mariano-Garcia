@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-pruebas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss/main.scss dist/css/main.css --no-source-map --style=expanded",
+    "watch": "sass --watch src/scss/main.scss dist/css/main.css --no-source-map --style=expanded",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}

@@ -1,0 +1,136 @@
+@use '../abstracts/variables' as *;
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.cartel-noticias {
+    margin-top: 20px;
+}
+
+.categoria-box {
+    display: inline-block;
+    background: $color-accent;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+.categoria {
+    color: $color-bg;
+    text-transform: uppercase;
+    font-size: 22px;
+    display: inline-block;
+    text-align: center;
+}
+
+.divisor {
+    width: 100%;
+    height: 3px;
+    background: $divider-color;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seccion-noticias {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.noticias-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    overflow: hidden;
+    background: $color-bg;
+}
+
+.columna-principal,
+.columna-secundaria {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+
+.noticia-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px 6px 0 0;
+    object-fit: cover;
+    transition: transform 0.3 ease, filter 0.3 ease;
+}
+
+.noticia-img:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.85);
+}
+
+.noticia-grande img {
+    max-height: 400px;
+}
+
+.noticia-chica img {
+    max-height: 105px;
+}
+
+.noticia-texto {
+    margin-top: 0.5rem;
+    padding: 10px;
+}
+
+.titulo {
+    font-family: $fuente-titulos;
+    color: $color-text;
+    text-decoration: none;
+}
+
+a:hover .titulo {
+    color: $color-accent;
+}
+
+.noticia-grande .titulo {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.noticia-chica .titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.fecha {
+    font-size: 0.85rem;
+    color: $color-subtext;
+    margin: 0.3rem 0;
+    display: block;
+}
+
+.descripcion {
+    color: $color-text;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+
+@media (max-width: 768px) {
+    .noticias-grid {
+        grid-template-columns: 1fr;
+    }
+    .noticia-chica img {
+        max-height: 400px; 
+        object-fit: cover;
+    }
+}

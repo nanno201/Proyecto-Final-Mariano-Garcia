@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+
+# Archivos generados automáticamente
+dist/
+
+# Archivos del sistema
+.DS_Store
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos temporales
+*.log
