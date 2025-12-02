@@ -1,0 +1,75 @@
+@use '../abstracts/variables' as *;
+
+.seccion-formulario {
+    padding: 40px 0;
+    margin-bottom: 100px;
+}
+
+.titulo-form {
+    align-items: start;
+    font-family: $fuente-titulos;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.divider-form {
+    height: 3px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: $divider-color;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: $color-bg;
+    padding: 20px;
+    border: 1px solid $divider-color;
+    border-radius: 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: $color-text;
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    background: $color-bg;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: $color-sec;
+    outline: none;
+}
+
+.btn-enviar {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: $color-sec;
+    color: $color-bg;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+

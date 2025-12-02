@@ -1,5 +1,4 @@
 @use '../abstracts/variables' as *;
-@use '../base/typography';
 
 body {
     font-family: $fuente-principal;
@@ -9,4 +8,8 @@ body {
 
 a {
     text-decoration: none;
+}
+
+textarea {
+    resize: none;
 }

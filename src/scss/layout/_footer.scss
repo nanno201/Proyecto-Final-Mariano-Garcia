@@ -1,1 +1,53 @@
 
+@use '../abstracts/variables' as *;
+
+
+.footer {
+    background-color: $color-nav;
+    color: #fff;
+    padding: 20px 0;
+    border-top: 2px solid $color-accent;
+    margin-top: 20px;
+}
+
+
+.footer-container {
+    max-width: 1200px;  
+    margin: 0 auto;      
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 0 20px;  
+}            
+
+.footer-nav ul {
+    list-style: none;
+    gap: 20px;      
+    margin: 0;      
+    padding: 0;     
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: $color-text;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer-nav a:hover {
+    color: $color-accent;
+}
+
+.footer-social a {
+    margin-left: 15px;  
+}
+
+.footer-social img {
+    width: 30px;     
+    height: 30px;
+    transition: filter 0.3s;
+}
+
+.footer-social img:hover {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(7452%) hue-rotate(1deg) brightness(95%) contrast(122%);
+}
