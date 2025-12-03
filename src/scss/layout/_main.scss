@@ -279,13 +279,10 @@ a:hover .titulo {
         grid-template-columns: 1fr;
     }
     .noticia-chica img {
-        max-height: 400px; 
         object-fit: cover;
+        max-height: 200px;
     }
     .columnas-noticias {
         flex-direction: column;
-    }
-    .imagen-1 img {
-        height: 250px;
     }
 }

@@ -30,6 +30,11 @@ header .container {
     min-width: 300px;
 }
 
+header .grupo-izq a:hover img {
+    transform: scale(1.03);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.15));
+}
+
 .divider {
     width: 2px;
     height: 100px;
@@ -81,7 +86,7 @@ header .container {
     }
 
     .grupo-izq img {
-        width: 60px;
+        width: 100px;
     }
 
     .divider {
