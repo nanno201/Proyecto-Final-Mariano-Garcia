@@ -93,7 +93,7 @@
 
 .noticia-texto {
     margin-top: 0.5rem;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .titulo {
@@ -107,12 +107,12 @@ a:hover .titulo {
 }
 
 .noticia-grande .titulo {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
 .noticia-chica .titulo {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -196,7 +196,7 @@ a:hover .titulo {
 }
 
 .contenido-1 {
-    padding: 10px;
+    padding: 1rem;
 }
 
 .contenido-1 h2 {
@@ -259,12 +259,12 @@ a:hover .titulo {
 }
 
 .contenido-p {
-    padding: 10px;
+    padding: 1rem;
 }
 
 .contenido-p h3 {
     margin: 0 0 3px;
-    font-size: 0.9rem;  
+    font-size: 1rem;  
     font-family: $fuente-titulos;
 }
 

@@ -1,0 +1,154 @@
+@use '../abstracts/variables' as *;
+
+
+.noticia-pagina {
+    max-width: 1200px;   
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;         
+}
+
+.noticia-full {
+    border: 1px solid $divider-color;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.noticia-full-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.noticia-full-contenido {
+    padding: 16px;
+}
+
+.noticia-full-contenido h1 {
+    font-family: $fuente-titulos;
+    margin-bottom: 10px;
+}
+
+.fecha-full {
+    display: block;
+    margin-bottom: 20px;
+    color: $color-subtext;
+}
+
+.noticia-full-contenido p {
+    line-height: 1.6;
+    color: $color-text;
+    margin-bottom: 18px;
+}
+
+
+.interes {
+    margin-top: 50px;
+}
+
+.interes-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.interes-header img {
+    width: 24px;
+    height: 24px;
+}
+
+.interes-header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: $fuente-principal;
+}
+
+
+.interes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Mini noticia */
+.mini-noticia {
+    text-align: start;
+    border: 1px solid $divider-color;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mini-img img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: transform .3s ease;
+}
+
+.mini-img:hover img {
+    transform: scale(1.03);
+}
+
+.mini-noticia h3 {
+    margin: 10px 0 5px;
+    font-family: $fuente-titulos;
+    padding: 16px;
+}
+
+.mini-fecha {
+    color: $color-subtext;
+    font-size: .9rem;
+    padding: 0 16px 16px;
+}
+
+@media (max-width: 992px) {
+
+    .noticia-pagina {
+        max-width: 700px;
+        padding: 0 16px;
+    }
+
+    .interes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .mini-img img {
+        height: 140px; 
+    }
+}
+
+@media (max-width: 600px) {
+
+    .noticia-pagina {
+        padding: 0 12px;
+    }
+
+    .noticia-full-contenido h1 {
+        font-size: 1.4rem;
+    }
+
+    .fecha-full {
+        font-size: .9rem;
+    }
+
+    .noticia-full-contenido p {
+        font-size: 1rem;
+    }
+
+    .interes-header span {
+        font-size: 1rem;
+    }
+
+    .interes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mini-img img {
+        height: 130px;
+    }
+}
+
+

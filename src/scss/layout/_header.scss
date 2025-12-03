@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    padding: 10px 0;
+    padding: 0 20px;
     background: $color-bg;
     border-bottom: 2px solid $color-accent;
 }
@@ -49,25 +49,6 @@ header .grupo-izq a:hover img {
 .grupo-der {
     font-size: 18px;
     color: $color-subtext;
-}
-
-@media (max-width: 1268px) {
-
-    .grupo-izq img {
-        width: 65px;
-    }
-
-    .divider {
-        height: 55px;
-    }
-
-    .ciudad {
-        font-size: 18px;
-    }
-
-    .grupo-der {
-        font-size: 14px;
-    }
 }
 
 @media (max-width: 768px) {
